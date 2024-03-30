@@ -128,11 +128,11 @@
   padding-bottom: 98px;
 }
 
-.downroad_btn{
+.download_btn{
   margin-bottom: 48px;
   gap: 8px;
 }
-.downroad_btn img{width: 158px;}
+.download_btn img{width: 158px;}
 
 /* sec1 */
 .sec1_inner{width: 100%;}
