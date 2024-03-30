@@ -1,0 +1,313 @@
+
+/* ______________________________Mobile */
+@media screen and (max-width: 767px){
+
+  /* HEADER======================================== */
+  header{
+    top: 0;
+  }
+  nav{
+    padding-top: 30px;
+  }
+
+/* 로고 */
+.logo{
+  margin: 0 16px;
+  /* padding: 5px 20px; */
+  z-index: 200;
+}
+.logo a img{
+  width: 120px;
+}
+
+/* GNB */
+.gnb{
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #373A3C;
+  border-radius: 0;
+  position: absolute;
+  top: -100vh;
+}
+.gnb li{
+  z-index: 150;
+  /* margin-bottom: 20px; */
+}
+.gnb li a{
+  color: #fff;
+}
+
+
+/* Trigger */
+.allmenu{
+  display: block;
+  position: absolute;
+  width: 50px; 
+  height: 50px;
+  /* top: 10px; */
+  right: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 999;
+  transition: .3s;
+}
+.allmenu.active{
+  background-color: transparent;
+}
+
+.trigger{
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 12px;
+  transition: .3s;
+}
+.trigger span{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: .3s;
+}
+.trigger span:nth-child(1){top: 0;}
+.trigger span:nth-child(2){top: 50%; width: 80%;}
+.trigger span:nth-child(3){top: 100%;}
+
+/* jQuery 에서 trigger클릭시 바뀌는 부분 */
+.allmenu.active .trigger span{background-color: #fff;}
+.allmenu.active .trigger span:nth-child(1){
+  top: 50%;
+  transform: rotate(45deg);
+}
+.allmenu.active .trigger span:nth-child(2){opacity: 0;}
+.allmenu.active .trigger span:nth-child(3){
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.allmenu.active:hover .trigger span:nth-child(1){transform: rotate(45deg);}
+.allmenu.active:hover .trigger span:nth-child(3){transform: rotate(-45deg);}
+
+
+/* SECTION========================================= */
+.text{
+  gap: 10px;
+}
+.text h1{
+  font-size: 26px;
+}
+.text p{
+  font-size: 16px;
+  line-height: 22px;
+  width: 92%;
+  margin: auto;
+}
+.sec4_inner>.text{
+  margin-top: 0;
+  padding-top: 80px;
+}
+.sec1_inner>.text{
+  margin-top: 0;
+  padding-top: 70px;
+}
+
+/* sec0 */
+.sec0_inner{
+  width: 92%;
+  border-radius: 10px;
+}
+.sec0_inner>img{width: 70px;}
+.sec0_inner>h1{
+  font-size: 26px;
+  padding-bottom: 98px;
+}
+
+.downroad_btn{
+  margin-bottom: 48px;
+  gap: 8px;
+}
+.downroad_btn img{width: 158px;}
+
+/* sec1 */
+.sec1_inner{width: 100%;}
+.sec1_inner>.text{
+  height: 30vh;
+}
+.sec1_slide{
+  flex-direction: column;
+  height: 70vh;
+  justify-content: center;
+  gap: 10px;
+}
+.sec1_swiper_01, .sec1_swiper_02{
+  width: 92%;
+  height: 252px;
+  border-radius: 10px;
+}
+.sec1_swiper_01 h2, .sec1_swiper_02 h2{
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+}
+
+.swiper-slide img{
+  width: 130px;
+  height: 130px;
+}
+.nft_btn{
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  margin-top: 0px;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+/* 슬라이드 좌우버튼 */
+.swiper-button-prev,
+.swiper-button-next{
+  display: none;
+}
+.swiper-pagination{
+  bottom: 10px !important;
+}
+
+/* sec2, sec3 공통 */
+.sec2_inner, .sec3_inner{
+  flex-direction: column;
+}
+.sec2_left, .sec3_right{
+  width: 100%;
+  height: 45vh;
+}
+.sec2_right, .sec3_left{
+  width: 100%;
+  height: 55vh;
+  gap: 20px;
+  padding: 40px 0;
+}
+.sec2_right>h2, .sec3_left>h2{font-size: 18px;}
+
+/* sec2 */
+.sec2_left{
+  background: url(../image/section2/background_mo.png)no-repeat;
+  background-size: cover;
+}
+.sec2_table{
+  width: 92%;
+  background: url(../image/section2/sec2_table_mo.png)no-repeat center;
+  background-size: contain;
+}
+
+/* sec3 */
+.sec3_inner{
+  flex-direction: column-reverse;
+}
+.sec3_table{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.sec3_table>div{
+  width: 92%;
+  height: 80px;
+  border-radius: 10px;
+}
+.sec3_table>div p{
+  width: 80%;
+  font-size: 16px;
+}
+.sec3_right{
+  background: url(../image/section3/background_mo.png)no-repeat;
+  background-size: cover;
+}
+
+/* sec4 */
+.sec4_inner{width: 100%;}
+.sec4_inner>.text{height: 15vh;}
+.sec4_table{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 77vh;
+  margin-top: 50px;
+  gap: 10px;
+}
+.acodion_tab{
+  width: 92%;
+  height: 70px;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  cursor: pointer;
+  /* transition: .35s;
+  transition-timing-function: cubic-bezier(0.99, 0.02, 0.02, 0.99); */
+}
+.acodion_tab h2{
+  position: absolute;
+  top: 26px;
+  left: 20px;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.acodion_tab_text{
+  display: none;
+  margin-top: 30px;
+  /* transition: .35s;
+  transition-timing-function: cubic-bezier(0.99, 0.02, 0.02, 0.99);
+  transition-delay: .35s; */
+}
+.acodion_tab_text p{
+  font-size: 16px;
+}
+.acodion_tab_text p:nth-child(1){
+  margin-top: 14px;
+}
+.acodion_tab span{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* 아코디언메뉴 Selected */
+.acodion_tab.selected{height: 250px;}
+.acodion_tab.selected .acodion_tab_text{
+  display: block;
+}
+.acodion_tab.selected .acodion_tab span{
+  transform: rotate(180deg);
+}
+
+/* sec5 */
+.sec5_inner{
+  width: 92%;
+  border-radius: 10px;
+}
+.sec5_inner>.text{padding: 50px 0 30px;}
+.sec5_inner>.text p{
+  width: 80%;
+  margin: auto;
+}
+.contact_btn{
+  flex-direction: column;
+  align-items: center;
+}
+.contact_btn img{
+  margin: 10px;
+  width: 192px;
+}
+
+
+}
