@@ -72,7 +72,7 @@ nav{
 /* SECTION================================================ */
 /* 공통 */
 .inner{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 100vh;
   margin: auto;
   display: flex;
@@ -135,6 +135,7 @@ nav{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .sec0_inner>h1{
   padding-bottom: 128px;
