@@ -5,7 +5,7 @@ $(document).ready(function(){
     scrollHorizontally: false,
     //licensede Key: '',
     navigation: true,
-    anchors:['Num0', 'Num1', 'Num2', 'Num3', 'Num4', 'Num5'],
+    anchors:['Num0', 'Num1', 'Num2', 'Num3', 'Num4', 'Num5', 'Num6'],
     afterLoad: function(old_elem, new_elem, direction){
   
     }
@@ -57,18 +57,18 @@ $(document).ready(function(){
     };
   });
 
-  move = true;
-  $(".gnb li").click(function(){
-    if(move){
-      $(".allmenu").removeClass("active");
-      $(".gnb").animate({top:"-100vh"});
-      move = false;
-    }else {
-      $(".allmenu").addClass("active");
-      $(".gnb").animate({top:"0"});
-      move = true;
-    };
-  });
+  // move = true;
+  // $(".gnb li").click(function(){
+  //   if(move){
+  //     $(".allmenu").removeClass("active");
+  //     $(".gnb").animate({top:"-100vh"});
+  //     move = false;
+  //   }else {
+  //     $(".allmenu").addClass("active");
+  //     $(".gnb").animate({top:"0"});
+  //     move = true;
+  //   };
+  // });
 
   $(".acodion_tab").click(function(){
     $(this).siblings().removeClass("selected");

@@ -47,7 +47,7 @@ nav{
   transform: translateX(-50%);
   display: flex;
   padding: 10px;
-  gap: 26px;
+  gap: 10px;
 }
 .gnb li{
   /* height: 46px; */
@@ -55,18 +55,17 @@ nav{
 }
 .gnb li a{
   color: #fff;
-  padding: 12px 30px;
-  display: block;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   height: 100%;
-  font-size: 18px;
   font-weight: 500;
 }
 .gnb li.active, .gnb li:hover{}
 
 /* Trigger */
 .allmenu{display: none;}
+.gnb_mo{display: none;}
 
 
 /* SECTION================================================ */
@@ -105,7 +104,7 @@ nav{
   transition: all .35s ease-out;
   transition-delay: .45s;
 }
-.sec1_inner>.text, .sec4_inner>.text{margin-top: 100px;}
+.sec0-1_inner>.text, .sec1_inner>.text, .sec4_inner>.text{margin-top: 100px;}
 .section.active .text h1{
   opacity: 1;
   transform: translateY(0);
@@ -160,6 +159,57 @@ nav{
   cursor: pointer;
 }
 
+/* sec0-1 */
+.game_type{
+  width: 100%;
+  height: 72%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.type1, .type2{
+  position: relative;
+  width: 850px;
+  height: 630px;
+  background-color: #414345;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 40px 60px;
+}
+.type1 h2, .type2 h2{
+  font-size: 28px;
+  font-weight: 700;
+}
+.type1 img, .type2 img{
+  margin: auto;
+  width: 500px;
+}
+
+.type_desc{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.type_desc>div h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.type_desc>div p{
+  padding-left: 12px;
+  position: relative;
+}
+.type_desc>div p::before{
+  content: ':';
+  position: absolute;
+  left: 5px;
+}
+
+
 /* sec1 */
 .sec1_slide{
   width: 100%;
@@ -190,7 +240,7 @@ nav{
   position: absolute;
   top: 40px;
   left: 60px;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 700;
 }
 .swiper-slide{
