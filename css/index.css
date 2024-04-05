@@ -39,6 +39,13 @@ nav{
   align-items: center;
   height: 100%;
 }
+.logo a .logo_box{
+  margin-top: 5px;
+  height: 80px;
+  width: 186px;
+  background: url(../image/logo2.png) no-repeat;
+  background-size: contain;
+}
 
 /* GNB */
 .gnb{
